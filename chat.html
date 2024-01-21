@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chat</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="assets/css/styles-light.min.css">
+  <link rel="stylesheet" href="assets/css/styles-dark.min.css" media="(prefers-color-scheme: dark)">
+
+  <!-- Sweetalert2 CSS Files -->
+  <link href="assets/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+
+  <!-- Fancybox CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!-- Toastr Files CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="GD Cosmetic">
+        <span class="d-none d-lg-block">GD Cosmetic</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <!-- <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form> -->
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-dots"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/avatar.jpg" alt="Profile" class="rounded-circle" id="my-avatar">
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="full-name"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6 id="dropdown-full-name"></h6>
+              <span id="dropdown-positon"></span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="login.html" id="btnlogout">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#company-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-building-fill"></i><span>Company</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="company-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="department.html">
+              <i class="bi bi-building"></i><span>Department</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="position.html">
+              <i class="bi bi-person-workspace"></i><span>Position</span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!-- End Company Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="chat.html">
+          <i class="bi bi-messenger"></i>
+          <span>Chat</span>
+        </a>
+      </li><!-- End Chat Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="project.html">
+          <i class="bi bi-folder-fill"></i>
+          <span>Project</span>
+        </a>
+      </li><!-- End Project Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="task.html">
+          <i class="bi bi-clipboard2-check-fill"></i>
+          <span>Task</span>
+        </a>
+      </li><!-- End Task Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="employee.html">
+          <i class="bi bi-people-fill"></i><span>Employee</span>
+        </a>
+      </li><!-- End Employee Page Nav -->
+
+      <li class="nav-item d-none" id="nav-account">
+        <a class="nav-link collapsed" href="account.html">
+          <i class="bi bi-person-vcard"></i><span>Account</span>
+        </a>
+      </li><!-- End Account Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="attendance.html">
+          <i class="bi bi-calendar-check"></i><span>Attendance</span>
+        </a>
+      </li><!-- End Attendance Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#salaries-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-wallet2"></i><span>Salary</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="salaries-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="salary-adjustment.html">
+              <i class="bi bi-bar-chart"></i><span>Salary Adjustment</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="salary.html">
+              <i class="bi bi-calculator"></i><span>Payroll</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Salaries Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="recognition.html">
+          <i class="bi bi-star-fill"></i><span>Recognition</span>
+        </a>
+      </li><!-- End Recognition Page Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <!-- <h1>Contact</h1> -->
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Chat</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              
+              <div class="layout" style="width: auto; height: auto;">                
+
+                
+
+                <!-- Main Content -->
+                <div class="main main-visible overflow-hidden h-100">
+                  <div class="chat d-flex flex-row h-100">
+                    <!-- Chat -->
+                    <div class="chat-body h-100 w-100 d-flex flex-column">
+                      <!-- Chat Header -->
+                      <div class="chat-header d-flex align-items-center border-bottom px-2">
+                        <div class="container-fluid">
+                          <div class="row align-items-center g-0">
+                            <div class="col-8 col-sm-5">
+                              <div class="d-flex align-items-center">
+                                <!-- Close Chat Button -->
+                                <div class="d-block d-xl-none me-3">
+                                  <button class="chat-hide btn btn-icon btn-base btn-sm" type="button">
+                                    <i class="ri-arrow-left-s-line"></i>
+                                  </button>
+                                </div>
+                                <!-- Close Chat Button -->
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-online avatar-sm me-3">
+                                  <span class="avatar-label bg-soft-primary text-primary fs-6">AM</span>
+                                </div>
+                                <!-- Avatar -->
+
+                                <!-- Text -->
+                                <div class="flex-grow-1 overflow-hidden">
+                                  <h6 class="d-block text-truncate mb-1">Ariel Martinez</h6>
+                                  <p class="d-block text-truncate text-success fs-6 mb-0">Available</p>
+                                </div>
+                                <!-- Text -->
+                              </div>
+                            </div>
+                            <div class="col-4 col-sm-7">
+                              <ul class="list-inline text-end mb-0">
+                                <!-- Search Button -->
+                                <li class="list-inline-item d-none d-sm-inline-block">
+                                  <button class="btn btn-icon btn-base" type="button" title="Search"
+                                    data-bs-toggle="collapse" data-bs-target="#search-chat" aria-expanded="false">
+                                    <i class="ri-search-line"></i>
+                                  </button>
+                                </li>
+                                <!-- Search Button -->
+
+                                <!-- Chat Info Button -->
+                                <li class="list-inline-item d-none d-sm-inline-block">
+                                  <button class="chat-info-toggle btn btn-icon btn-base" title="Chat info"
+                                    type="button">
+                                    <i class="ri-user-3-line"></i>
+                                  </button>
+                                </li>
+                                <!-- Chat Info Button -->
+
+                                <!-- Dropdown -->
+                                <li class="list-inline-item">
+                                  <div class="dropdown">
+                                    <button class="btn btn-icon btn-base" type="button" title="Menu"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="ri-more-fill"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                      <li class="d-block d-sm-none">
+                                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                          href="#" data-bs-toggle="collapse" data-bs-target="#search-chat"
+                                          aria-expanded="false">Search
+                                          <i class="ri-search-line"></i>
+                                        </a>
+                                      </li>
+                                      <li class="d-block d-sm-none">
+                                        <a class="chat-info-toggle dropdown-item d-flex align-items-center justify-content-between"
+                                          href="#">Chat Info
+                                          <i class="ri-information-line"></i>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                          href="#">Archive
+                                          <i class="ri-archive-line"></i>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                          href="#">Mute
+                                          <i class="ri-volume-mute-line"></i>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <div class="dropdown-divider"></div>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                          href="#">Block
+                                          <i class="ri-forbid-line"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <!-- Dropdown -->
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Chat Header -->
+
+                      <!-- Chat Search -->
+                      <div>
+                        <div class="border-bottom collapse" id="search-chat">
+                          <div class="px-1 py-4">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search in chat"
+                                      aria-label="Search in chat" aria-describedby="search-in-chat-button">
+                                    <button class="btn btn-white btn-lg border" type="button"
+                                      id="search-in-chat-button"><i class="ri-search-line"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Chat Search -->
+
+                      <!-- Chat Content -->
+                      <div class="chat-content hide-scrollbar h-100">
+                        <!-- Messages -->
+                        <div class="container-fluid g-0 p-4">
+                          <!-- Message 1 -->
+                          <div class="message">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <!-- Shared Photos -->
+                                  <h6>Shared Photos:</h6>
+                                  <div class="shared-image-list row align-items-center g-3">
+                                    <div class="col">
+                                      <a class="shared-image" href="./assets/img/reset-dark.png">
+                                        <img class="img-fluid rounded-2" src="./assets/img/reset-dark.png" alt="preview"
+                                          data-action="zoom">
+                                      </a>
+                                    </div>
+                                    <div class="col">
+                                      <a class="shared-image" href="./assets/img/signin-dark.png">
+                                        <img class="img-fluid rounded-2" src="./assets/img/signin-dark.png"
+                                          alt="preview" data-action="zoom">
+                                      </a>
+                                    </div>
+                                    <div class="col">
+                                      <a class="shared-image" href="./assets/img/signup-dark.png">
+                                        <img class="img-fluid rounded-2" src="./assets/img/signup-dark.png"
+                                          alt="preview" data-action="zoom">
+                                      </a>
+                                    </div>
+                                    <div class="col">
+                                      <a class="shared-image" href="./assets/img/reset-dark.png">
+                                        <img class="img-fluid rounded-2" src="./assets/img/reset-dark.png" alt="preview"
+                                          data-action="zoom">
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <!-- Shared Photos -->
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Hi John, please take a look at the result of my work, this is a project that I
+                                    am currently working on.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-primary text-primary fs-6">AM</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">Ariel Martinez</h6>
+                                <small class="text-muted">9:15 PM
+                                  <i class="ri-check-double-line align-bottom text-success fs-5"></i>
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 1 -->
+
+                          <!-- Message 2 -->
+                          <div class="message self">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Hi Ariel, it looks great except for a few things.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Now I will try to explain, the primari color is strongly out of the general
+                                    composition, try to use flatter colors.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-success text-success fs-6">JD</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">John Davis</h6>
+                                <small class="text-muted">9:26 PM
+                                  <i class="ri-check-double-line align-bottom text-success fs-5"></i>
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 2 -->
+
+                          <!-- Separator -->
+                          <div class="separator">
+                            <span class="separator-title fs-7 ls-1">Today</span>
+                          </div>
+                          <!-- Separator -->
+
+                          <!-- Message 3 -->
+                          <div class="message">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Looks like I should do some more design work, thanks for the help.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Perhaps enough work for today, tell us how you spend time with your
+                                    friends.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-primary text-primary fs-6">AM</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">Ariel Martinez</h6>
+                                <small class="text-muted">9:37 PM
+                                  <i class="ri-check-double-line align-bottom text-success fs-5"></i>
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 3 -->
+
+                          <!-- Message 4 -->
+                          <div class="message self">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>We combine recreation and sports, there are many ways to relax, you can join us
+                                    at any time.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-success text-success fs-6">JD</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">John Davis</h6>
+                                <small class="text-muted">9:42 PM
+                                  <i class="ri-check-double-line align-bottom text-success fs-5"></i>
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 4 -->
+
+                          <!-- Message 5 -->
+                          <div class="message">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Great, I love outdoor activities, invite me for a company next time.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-primary text-primary fs-6">AM</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">Ariel Martinez</h6>
+                                <small class="text-muted">9:46 PM
+                                  <i class="ri-check-double-line align-bottom text-success fs-5"></i>
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 5 -->
+
+                          <!-- Message 6 -->
+                          <div class="message self">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <span>Of course, Ariel, I will. Here is a photo report from the last meeting.</span>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <div class="d-flex align-items-center">
+                                    <button class="btn btn-lg btn-icon btn-secondary rounded-circle me-3">
+                                      <i class="ri-download-line"></i>
+                                    </button>
+                                    <div>
+                                      <h5 class="mb-0">photo_archive.zip</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="dropdown align-self-center">
+                                  <button class="btn btn-icon btn-base btn-sm" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="ri-more-2-fill"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Edit
+                                        <i class="ri-edit-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Share
+                                        <i class="ri-share-line"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        href="#">Delete
+                                        <i class="ri-delete-bin-line"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-success text-success fs-6">JD</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">John Davis</h6>
+                                <small class="text-muted">9:53 PM
+                                  <i class="ri-check-double-line align-bottom text-success fs-5"></i>
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 6 -->
+
+                          <!-- Message 7 -->
+                          <div class="message">
+                            <div class="message-wrap">
+                              <div class="message-item">
+                                <div class="message-content">
+                                  <div>Writing
+                                    <div class="type-indicator">
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message-info">
+                              <div class="avatar avatar-sm">
+                                <span class="avatar-label bg-soft-primary text-primary fs-6">AM</span>
+                              </div>
+                              <div>
+                                <h6 class="mb-0">Ariel Martinez</h6>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Message 7 -->
+                        </div>
+                        <!-- Messages -->
+
+                        <!-- Scroll Chat to Bottom -->
+                        <div class="js-scroll-to-bottom"></div>
+                        <!-- Scroll Chat to Bottom -->
+                      </div>
+                      <!-- Chat Content -->
+
+                      <!-- Chat Footer -->
+                      <div class="chat-footer d-flex align-items-center border-top px-2">
+                        <div class="container-fluid">
+                          <div class="row align-items-center g-4">
+                            <!-- Input -->
+                            <div class="col">
+                              <div class="input-group">
+                                <button class="btn btn-white btn-lg border" type="button"><i
+                                    class="ri-attachment-2"></i></button>
+                                <input type="text" class="form-control form-control-lg" placeholder="Type message"
+                                  aria-label="type message">
+                                <button class="btn btn-white btn-lg border" type="button"><i
+                                    class="ri-chat-smile-2-line"></i></button>
+                              </div>
+                            </div>
+                            <!-- Input -->
+
+                            <!-- Button -->
+                            <div class="col-auto">
+                              <ul class="list-inline d-flex align-items-center mb-0">
+                                <li class="list-inline-item">
+                                  <button type="submit" class="btn btn-icon btn-primary btn-lg rounded-circle">
+                                    <i class="ri-send-plane-fill"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- Button -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Chat Footer -->
+                    </div>
+                    <!-- Chat -->
+
+                    <!-- Chat Info -->
+                    <div class="chat-info h-100 border-start">
+                      <div class="d-flex flex-column h-100">
+                        <!-- Header -->
+                        <div class="chat-info-header d-flex align-items-center border-bottom">
+                          <ul class="d-flex justify-content-between align-items-center list-unstyled w-100 mx-4 mb-0">
+                            <!-- Title -->
+                            <li>
+                              <h3 class="mb-0">User Profile</h3>
+                            </li>
+                            <!-- Title -->
+
+                            <!-- Close Button -->
+                            <li>
+                              <button class="chat-info-close btn btn-icon btn-base px-0">
+                                <i class="ri-close-line"></i>
+                              </button>
+                            </li>
+                            <!-- Close Button -->
+                          </ul>
+                        </div>
+                        <!-- Header -->
+
+                        <!-- Content -->
+                        <div class="hide-scrollbar h-100">
+                          <!-- User Info -->
+                          <div class="text-center p-4 pt-14">
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xl mb-4">
+                              <span class="avatar-label bg-soft-primary text-primary fs-3">AM</span>
+                            </div>
+                            <!-- Avatar -->
+
+                            <!-- Text -->
+                            <h5>Ariel Martinez</h5>
+                            <!-- Text -->
+
+                            <!-- Text -->
+                            <p class="text-muted fs-6">UX/UI Design</p>
+                            <!-- Text -->
+
+                            <!-- Text -->
+                            <div class="text-center">
+                              <span class="text-muted mb-0">Graphic designer.<br>
+                                Working with landing pages and templates.</span>
+                            </div>
+                            <!-- Text -->
+                          </div>
+                          <!-- User Info -->
+
+                          <!-- Segmented Control -->
+                          <div class="text-center mb-2">
+                            <ul class="nav nav-pills nav-segmented" id="pills-tab-user-profile" role="tablist">
+                              <!-- About -->
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill"
+                                  data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about"
+                                  aria-selected="true">About</button>
+                              </li>
+                              <!-- About -->
+
+                              <!-- Files -->
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-files-tab" data-bs-toggle="pill"
+                                  data-bs-target="#pills-files" type="button" role="tab" aria-controls="pills-files"
+                                  aria-selected="false">Files</button>
+                              </li>
+                              <!-- Files -->
+                            </ul>
+                          </div>
+                          <!-- Segmented Control -->
+
+                          <!-- Tab Content -->
+                          <div class="tab-content" id="pills-tab-user-profile-content">
+                            <!-- About -->
+                            <div class="tab-pane fade show active" id="pills-about" role="tabpanel"
+                              aria-labelledby="pills-about-tab">
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item py-4">
+                                  <h6 class="mb-1">Name</h6>
+                                  <p class="text-truncate mb-0">Ariel Martinez</p>
+                                </li>
+                                <li class="list-group-item py-4">
+                                  <h6 class="mb-1">Email</h6>
+                                  <p class="text-truncate mb-0">ariel@gmail.com</p>
+                                </li>
+                                <li class="list-group-item py-4">
+                                  <h6 class="mb-1">Phone</h6>
+                                  <p class="text-truncate mb-0">646-210-1784</p>
+                                </li>
+                                <li class="list-group-item py-4">
+                                  <h6 class="mb-1">Location</h6>
+                                  <p class="text-truncate mb-0">New York, USA</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- About -->
+
+                            <!-- Files -->
+                            <div class="tab-pane fade" id="pills-files" role="tabpanel"
+                              aria-labelledby="pills-files-tab">
+                              <ul class="list-group list-group-flush">
+                                <!-- File 1 -->
+                                <li class="list-group-item py-4">
+                                  <div class="row align-items-center gx-4">
+                                    <!-- Icon -->
+                                    <div class="col-auto">
+                                      <div class="avatar avatar-sm">
+                                        <span class="avatar-label">
+                                          <i class="ri-file-line"></i>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- Icon -->
+
+                                    <!-- Text -->
+                                    <div class="col overflow-hidden">
+                                      <h6 class="text-truncate mb-1">Presentation.pptp</h6>
+                                      <ul class="list-inline m-0">
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">135 KB</p>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">PPTP</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- Text -->
+
+                                    <!-- Dropdown -->
+                                    <div class="col-auto">
+                                      <div class="dropdown">
+                                        <button class="btn btn-icon btn-base btn-sm" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="ri-more-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Download<i class="ri-download-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Share<i class="ri-share-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <div class="dropdown-divider"></div>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Delete<i class="ri-delete-bin-line"></i></a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <!-- Dropdown -->
+                                  </div>
+                                </li>
+                                <!-- File 1 -->
+
+                                <!-- File 2 -->
+                                <li class="list-group-item py-4">
+                                  <div class="row align-items-center gx-4">
+                                    <!-- Icon -->
+                                    <div class="col-auto">
+                                      <div class="avatar avatar-sm">
+                                        <span class="avatar-label">
+                                          <i class="ri-file-line"></i>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- Icon -->
+
+                                    <!-- Text -->
+                                    <div class="col overflow-hidden">
+                                      <h6 class="text-truncate mb-1">Bootstrap.zip</h6>
+                                      <ul class="list-inline m-0">
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">240 KB</p>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">ZIP</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- Text -->
+
+                                    <!-- Dropdown -->
+                                    <div class="col-auto">
+                                      <div class="dropdown">
+                                        <button class="btn btn-icon btn-base btn-sm" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="ri-more-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Download<i class="ri-download-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Share<i class="ri-share-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <div class="dropdown-divider"></div>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Delete<i class="ri-delete-bin-line"></i></a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <!-- Dropdown -->
+                                  </div>
+                                </li>
+                                <!-- File 2 -->
+
+                                <!-- File 3 -->
+                                <li class="list-group-item py-4">
+                                  <div class="row align-items-center gx-4">
+                                    <!-- Icon -->
+                                    <div class="col-auto">
+                                      <div class="avatar avatar-sm">
+                                        <span class="avatar-label">
+                                          <i class="ri-image-line"></i>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- Icon -->
+
+                                    <!-- Text -->
+                                    <div class="col overflow-hidden">
+                                      <h6 class="text-truncate mb-1">Image001.png</h6>
+                                      <ul class="list-inline m-0">
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">475 KB</p>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">PNG</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- Text -->
+
+                                    <!-- Dropdown -->
+                                    <div class="col-auto">
+                                      <div class="dropdown">
+                                        <button class="btn btn-icon btn-base btn-sm" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="ri-more-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Download<i class="ri-download-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Share<i class="ri-share-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <div class="dropdown-divider"></div>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Delete<i class="ri-delete-bin-line"></i></a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <!-- Dropdown -->
+                                  </div>
+                                </li>
+                                <!-- File 3 -->
+
+                                <!-- File 4 -->
+                                <li class="list-group-item py-4">
+                                  <div class="row align-items-center gx-4">
+                                    <!-- Icon -->
+                                    <div class="col-auto">
+                                      <div class="avatar avatar-sm">
+                                        <span class="avatar-label">
+                                          <i class="ri-image-line"></i>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <!-- Icon -->
+
+                                    <!-- Text -->
+                                    <div class="col overflow-hidden">
+                                      <h6 class="text-truncate mb-1">Image002.jpg</h6>
+                                      <ul class="list-inline m-0">
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">365 KB</p>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                          <p class="text-uppercase text-muted mb-0 fs-6">JPG</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- Text -->
+
+                                    <!-- Dropdown -->
+                                    <div class="col-auto">
+                                      <div class="dropdown">
+                                        <button class="btn btn-icon btn-base btn-sm" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="ri-more-fill"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Download<i class="ri-download-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Share<i class="ri-share-line"></i></a>
+                                          </li>
+                                          <li>
+                                            <div class="dropdown-divider"></div>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                              href="#">Delete<i class="ri-delete-bin-line"></i></a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <!-- Dropdown -->
+                                  </div>
+                                </li>
+                                <!-- File 4 -->
+                              </ul>
+                            </div>
+                            <!-- Files -->
+                          </div>
+                          <!-- Tab Content -->
+                        </div>
+                        <!-- Content -->
+                      </div>
+                    </div>
+                    <!-- Chat Info -->
+                  </div>
+                </div>
+                <!-- Main Content -->
+              </div>
+              <!-- Layout -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>GD Cosmetic</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+
+  <!-- Sweetalert2 JS Files -->
+  <script src="assets/sweetalert2/sweetalert2.min.js"></script>
+
+  <!-- Toastr JS Files-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <!-- Fancybox JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <!-- Luxon JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
