@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
             actualStartDate: inputActualStart,
             actualEndDate: inputActualEnd,
             note: inputNote,
-            projectManagerId: inputEmployee,
+            employeeId: inputEmployee,
             statusId: inputStatus
         };
 
